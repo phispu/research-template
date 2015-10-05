@@ -1,7 +1,7 @@
 # research-template
 A suggested repository structure for research and analysis projects.
 
-# Getting this Repository
+## Getting this Repository
 You can clone this repository anywhere on your machine and copy the file structure into a new research project repository.
 ```bash
 $ git clone git@github.com:thejunglejane/research-template.git
@@ -21,7 +21,7 @@ README.md        analysis         bin              data             requirements
 ```
 
 Once you've copied the repo contents into a new directory, set the remote URL for that new directory to a repository remote within your own GitHub organization or account. This will allow you to push and pull changes to your project instead of to the research-template repo.
-```bash
+```
 my-research-project$ git remote set-url origin <URL>
 ```
 Or, you can edit the .git/config file in the directory's root.
@@ -34,8 +34,8 @@ Or, you can edit the .git/config file in the directory's root.
 
 You will always have the original repository cloned (unless you delete the directory), and can always initialize new projects by copying its contents into a new directory and changing the remote URL to a new GitHub repo.
 
-### Using This Repository
+## Using This Repository
 This repository is just a suggestion for what your research project repository might contain, and reflects the general structure of our research projects at [@CaseCommonsDataScience](https://github.com/CaseCommonsDataScience/).
 
-##### Audit Branch
+#### Audit Branch
 This repository has an audit branch that can be used for internal verification of results. The audit branch contains an additional audit/ directory that has its own analysis, queries, and scripts. The idea is, given a set of steps in the research design, we should be able to reproduce the results of the original analysis. The output of the analysis, queries, and scripts on the audit branch should match the output of the analysis, queries, and scripts on the master branch.
