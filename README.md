@@ -20,11 +20,7 @@ $ mkproject my-research-project # initialize a new project and virtual env
 README.md        analysis         bin              data             requirements.txt results
 ```
 
-Once you've copied the repo contents into a new directory, set the remote URL for that new directory to a repository remote within your own GitHub organization or account. This will allow you to push and pull changes to your project instead of to the research-template repo.
-```
-my-research-project$ git remote set-url origin <URL>
-```
-Or, you can edit the .git/config file in the directory's root.
+Once you've copied the repo contents into a new directory, set the remote URL for that new directory to a repository remote within your own GitHub organization or account. This will allow you to push and pull changes to your project instead of to the research-template repo. You can do this by editing the .git/config file
 ```
 [remote "origin"]
   url = git@github.com:<your GitHub username or organizaztion>/<your repo>.git
